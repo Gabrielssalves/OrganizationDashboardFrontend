@@ -12,14 +12,14 @@ export const SidebarData = [
     },
     {
         title: 'Spaces',
-        path: '/spaces',
+        path: '/space',
         icon:<FontAwesomeIcon icon={faClipboardList} />,
         iconClosed: <FontAwesomeIcon icon={faAngleRight} />,
         iconOpened: <FontAwesomeIcon icon={faAngleDown} />,
         subNav: [
             {
                 title: 'Trabalho',
-                path: '/spaces/Trabalho',
+                path: '/space/trabalho',
                 icon: <FontAwesomeIcon icon={faBuilding} />
             }
         ],

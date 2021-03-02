@@ -8,21 +8,17 @@
 }
 
 .home, 
-.spaces, 
 .calendar {
     display: flex;
     height: 90vh;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     font-size: 3rem;
 }
 
-.App {
-    display: flex;
-    flex-direction: column;
-}
-
-.Space {
+.spaces {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }

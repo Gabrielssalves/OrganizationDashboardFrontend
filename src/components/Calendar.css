@@ -1,0 +1,100 @@
+.calendar {
+    background: #fff;
+    border-radius: 0 0 1rem 1rem;
+    -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, .2), 0 3px 1px #fff;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, .2), 0 3px 1px #fff;
+    color: rgb(44, 43, 43);
+    display: inline-block;
+    padding: 0.5rem;
+    width: 600px;
+    height: 520px;
+}
+
+.calendar .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem 1rem 0 0;
+	background: #532D84;
+	color: #fff;
+    padding: 1rem 1rem;
+}
+
+.calendar .header .arrow {
+    width: 2.75rem;
+    height: 2.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.calendar .header .arrow:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #532D84;
+    border-radius: 50%;
+}
+
+.calendar .header .current {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calendar .header .header-day {
+	font-size: 4rem;
+	font-weight: 900;
+    line-height: 5rem;
+}
+
+.calendar .header .header-month, .header-year {
+	font-size: 2rem;
+	line-height: 2rem;
+	text-transform: lowercase;
+}
+
+.calendar .day-container {
+    position: relative;
+    width: calc(100% / 7);
+    font-size: 1.50rem;
+    display: inline-block;
+    background-color: #fff;
+    padding: 0;
+    margin-top: 1.70rem;
+    box-sizing: border-box;
+    z-index: 1;
+    text-align: center;
+}
+
+.calendar .day-container .day {
+    width: 2.75rem;
+    height: 2.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    opacity: 0.75;
+}
+
+.calendar .day-container .day:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+.calendar .day-container .selected {
+    background-color: #d7c1f3;
+    color: #694796;    
+}
+
+.calendar .day-container .today {
+  background-color: #694796;
+  color: #fff; 
+}
+
+.calendar .day-container .out-of-month {
+    color: #aca9a9;    
+  }
